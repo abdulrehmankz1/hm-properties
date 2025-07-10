@@ -17,7 +17,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="mb-[190px]">
+    <nav className="absolute top-[30px] z-10 w-full">
       <div className="container nav_bg mx-auto flex flex-wrap pl-5 pr-2.5 flex-col md:flex-row items-center">
         {/* Logo */}
         <Link
@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link
               key={href}
               href={href}
-              className={`font-medium text-white ${
+              className={`font-medium text-white hover:underline ${
                 pathname === href ? "font-bold" : ""
               }`}
             >

@@ -6,9 +6,8 @@ import { Button } from "./Button";
 
 const HeroSection = () => {
   return (
-    <div className="hero_section pt-[30px] pb-12">
-      <Navbar />
-      <h1>
+    <div className="hero_section pt-[30px] pb-12 relative">
+      <h1 className="mt-[190px]">
         Find Your Dream
         <br />
         Home Today
@@ -29,7 +28,7 @@ const HeroSection = () => {
             name=""
             id=""
             placeholder="Search For Property"
-            className="placeholder:text-xl placeholder:text-white placeholder:font-medium text-white text-xl font-medium mb-7"
+            className="placeholder:text-xl focus:outline-0 placeholder:text-white placeholder:font-medium text-white text-xl font-medium mb-7"
           />
 
           <div className="flex flex-wrap gap-4 lg:gap-[50px] xl:gap-[50px]">
