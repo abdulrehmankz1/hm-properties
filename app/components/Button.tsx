@@ -32,7 +32,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const baseClasses =
-    'py-3 px-7 rounded-[30px] text-xl font-medium flex items-center justify-center transition-all duration-200 cursor-pointer';
+    'py-3 px-7 rounded-[30px] flex items-center justify-center transition-all duration-200 cursor-pointer';
 
   const combinedClasses = `${baseClasses} ${variantStyles[variant]} ${className}`;
 

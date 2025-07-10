@@ -19,7 +19,7 @@ function TestimonialCard({
     <div
       className={`bg-[#F5F7F9] rounded-[30px] shadow-[0_0_5px_0_rgba(0,0,0,0.25)] pr-11 p-5 ${className}`}
     >
-      <p className="text-xl font-medium text-[#00000080]">{text}</p>
+      <p className="text-[#00000080]">{text}</p>
 
       <div className="mt-10 flex items-center">
         <Image
@@ -31,8 +31,8 @@ function TestimonialCard({
           draggable={false}
         />
         <div>
-          <div className="text-black text-xl font-medium">{name}</div>
-          <div className="text-[#7b7c7d] text-lg font-medium -mt-1">{role}</div>
+          <div className="text-black">{name}</div>
+          <div className="text-[#7b7c7d] text-lg -mt-1">{role}</div>
         </div>
       </div>
     </div>

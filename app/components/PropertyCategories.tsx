@@ -3,26 +3,28 @@ import PropertyCard from "./PropertyCard";
 
 const PropertyCategories = () => {
   return (
-    <section className="container mx-auto my-[100px]">
-      <h4 className="mb-5">Property Categories</h4>
-      <h2 className="text-center mb-12">Find by Property Type</h2>
-      <div className="grid grid-cols-4 gap-5">
-        <PropertyCard
-          title="Apartments"
-          imageUrl="/assets/images/apartments.jpg"
-        />
+    <section>
+      <div className="container mx-auto my-100">
+        <h4 className="mb-5">Property Categories</h4>
+        <h2 className="text-center mb-12">Find by Property Type</h2>
+        <div className="grid grid-cols-4 gap-5">
+          <PropertyCard
+            title="Apartments"
+            imageUrl="/assets/images/apartments.jpg"
+          />
 
-        <PropertyCard
-          title="Commercial"
-          imageUrl="/assets/images/commercial.jpg"
-        />
+          <PropertyCard
+            title="Commercial"
+            imageUrl="/assets/images/commercial.jpg"
+          />
 
-        <PropertyCard
-          title="Luxury Villas"
-          imageUrl="/assets/images/villas.jpg"
-        />
+          <PropertyCard
+            title="Luxury Villas"
+            imageUrl="/assets/images/villas.jpg"
+          />
 
-        <PropertyCard title="Plots" imageUrl="/assets/images/plots.jpg" />
+          <PropertyCard title="Plots" imageUrl="/assets/images/plots.jpg" />
+        </div>
       </div>
     </section>
   );

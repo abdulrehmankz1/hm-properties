@@ -82,76 +82,76 @@ const LatestProperties = () => {
   const [activeIndex, setActiveIndex] = useState(initial);
 
   return (
-    <section className="container mx-auto px-4">
-      <h2 className="text-center text-2xl md:text-3xl font-semibold">
-        Latest Properties on the Market
-      </h2>
-      <p className="text-[#00000080] text-lg md:text-xl font-medium mt-5 text-center mb-5">
-        Discover our most recent listings, updated in real-time to help you find
-        your perfect home faster.
-      </p>
+    <section>
+      <div className="container mx-auto px-4">
+        <h2 className="text-center">Latest Properties on the Market</h2>
+        <p className="text-[#00000080] text-center my-5">
+          Discover our most recent listings, updated in real-time to help you
+          find your perfect home faster.
+        </p>
 
-      {/* Slider Controls */}
-      <div className="mb-12 flex justify-between mx-auto w-[140px]">
-        <button
-          onClick={() => swiperRef.current?.slidePrev()}
-          className="w-[60px] h-[60px] rounded-full bg-[#F5F7F9] hover:bg-[#eceeef] flex items-center justify-center cursor-pointer transition hover:scale-105 hover:shadow-md"
+        {/* Slider Controls */}
+        <div className="mb-12 flex justify-between mx-auto w-[140px]">
+          <button
+            onClick={() => swiperRef.current?.slidePrev()}
+            className="w-[60px] h-[60px] rounded-full bg-[#F5F7F9] hover:bg-[#eceeef] flex items-center justify-center cursor-pointer transition hover:scale-105 hover:shadow-md"
+          >
+            <ArrowLeft />
+          </button>
+          <button
+            onClick={() => swiperRef.current?.slideNext()}
+            className="w-[60px] h-[60px] rounded-full bg-black hover:bg-[#000000e3] text-white flex items-center justify-center cursor-pointer transition hover:scale-105 hover:shadow-lg"
+          >
+            <ArrowRight />
+          </button>
+        </div>
+
+        {/* Swiper Slider */}
+        <Swiper
+          modules={[Navigation]}
+          slidesPerView="auto"
+          centeredSlides
+          initialSlide={initial}
+          spaceBetween={20}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+            setActiveIndex(swiper.realIndex); // Sync on first render
+          }}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          className="mt-12"
         >
-          <ArrowLeft />
-        </button>
-        <button
-          onClick={() => swiperRef.current?.slideNext()}
-          className="w-[60px] h-[60px] rounded-full bg-black hover:bg-[#000000e3] text-white flex items-center justify-center cursor-pointer transition hover:scale-105 hover:shadow-lg"
-        >
-          <ArrowRight />
-        </button>
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index} className="!w-auto">
+              <div
+                className={`relative h-[600px] rounded-[30px] bg-cover bg-center flex justify-center items-end transition-all duration-300 ${
+                  index === activeIndex
+                    ? "w-[35vw] scale-100 z-20" // center card: 50% width
+                    : "w-[25vw] scale-[0.95] z-10" // side cards: 25% width
+                }`}
+                style={{
+                  backgroundImage: `url('${slide.image}')`,
+                }}
+              >
+                {/* Badges */}
+                {slide.tags && (
+                  <div className="absolute top-5 left-5 flex gap-2">
+                    {slide.tags.map((label, idx) => (
+                      <div
+                        key={idx}
+                        className="px-5 py-2.5 h-[48px] rounded-[30px] bg-black/40 backdrop-blur text-white font-semibold flex items-center"
+                      >
+                        {label}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <PropertyOverlay title={slide.title} description={slide.desc} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
-      {/* Swiper Slider */}
-      <Swiper
-        modules={[Navigation]}
-        slidesPerView="auto"
-        centeredSlides
-        initialSlide={initial}
-        spaceBetween={20}
-        onSwiper={(swiper) => {
-          swiperRef.current = swiper;
-          setActiveIndex(swiper.realIndex); // Sync on first render
-        }}
-        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="mt-12"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index} className="!w-auto">
-            <div
-              className={`relative h-[600px] rounded-[30px] bg-cover bg-center flex justify-center items-end transition-all duration-300 ${
-                index === activeIndex
-                  ? "w-[35vw] scale-100 z-20" // center card: 50% width
-                  : "w-[25vw] scale-[0.95] z-10" // side cards: 25% width
-              }`}
-              style={{
-                backgroundImage: `url('${slide.image}')`,
-              }}
-            >
-              {/* Badges */}
-              {slide.tags && (
-                <div className="absolute top-5 left-5 flex gap-2">
-                  {slide.tags.map((label, idx) => (
-                    <div
-                      key={idx}
-                      className="px-5 py-2.5 h-[48px] rounded-[30px] bg-black/40 backdrop-blur text-xl text-white font-semibold flex items-center"
-                    >
-                      {label}
-                    </div>
-                  ))}
-                </div>
-              )}
-
-              <PropertyOverlay title={slide.title} description={slide.desc} />
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
     </section>
   );
 };

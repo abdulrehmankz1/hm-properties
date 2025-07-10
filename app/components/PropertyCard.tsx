@@ -19,7 +19,7 @@ function PropertyCard({ title, imageUrl, className }: PropertyCardProps) {
         }}
       ></div>
 
-      <div className="text-black text-2xl font-medium mt-7 ml-7">{title}</div>
+      <div className="text-black text-2xl mt-7 ml-7">{title}</div>
     </div>
   );
 }

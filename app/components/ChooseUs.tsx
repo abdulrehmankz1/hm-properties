@@ -3,8 +3,9 @@ import ChooseUsCard from "./ChooseUsCard";
 
 const ChooseUs = () => {
   return (
-    <section className="container mx-auto my-[100px]">
-      <h4 className="mb-5">Why Choose Us</h4>
+    <section>
+    <div className="container mx-auto my-100">
+        <h4 className="mb-5">Why Choose Us</h4>
       <h2 className="text-center mb-12">Your Trusted Real Estate Partner</h2>
       <div className="flex justify-between">
         {/* Left Column: 40% width */}
@@ -54,6 +55,7 @@ const ChooseUs = () => {
           ></div>
         </div>
       </div>
+    </div>
     </section>
   );
 };

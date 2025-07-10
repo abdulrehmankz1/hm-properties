@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <HeroSection />
       <Partners />
@@ -20,6 +20,6 @@ export default function Home() {
       <Testimonials />
       <Newsletter />
       <Footer />
-    </div>
+    </>
   );
 }
