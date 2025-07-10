@@ -8,7 +8,7 @@ type ChooseUsCardProps = {
 
 function ChooseUsCard({ number, title, description }: ChooseUsCardProps) {
   return (
-    <div className="p-7 bg-[#F5F7F9] rounded-3xl w-[265px] h-[245px] choosUsCard">
+    <div className="p-7 bg-[#F5F7F9] rounded-3xl w-[100%] h-[245px] choosUsCard">
       <div className="py-1.5 px-4 bg-white text-xl font-medium w-fit rounded-full">
         {number}
       </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import ChooseUsCard from "./ChooseUsCard";
-import Image from "next/image";
 
 const ChooseUs = () => {
   return (
@@ -9,7 +8,7 @@ const ChooseUs = () => {
       <h2 className="text-center mb-12">Your Trusted Real Estate Partner</h2>
       <div className="flex justify-between">
         {/* Left Column: 40% width */}
-        <div className="w-[38%] grid grid-cols-2 gap-5">
+        <div className="w-[45%] grid grid-cols-2 gap-5">
           <ChooseUsCard
             number={1}
             title="Verified Listings Only"
