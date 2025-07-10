@@ -1,5 +1,6 @@
 import React from "react";
 import PropertyOverlay from "./PropertyOverlay";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const LatestProperties = () => {
   return (
@@ -7,10 +8,20 @@ const LatestProperties = () => {
       <h2 className="text-center text-2xl md:text-3xl font-semibold">
         Latest Properties on the Market
       </h2>
-      <p className="text-[#00000080] text-lg md:text-xl font-medium mt-5 text-center">
+      <p className="text-[#00000080] text-lg md:text-xl font-medium mt-5 text-center mb-5">
         Discover our most recent listings, updated in real-time to help you find
         your perfect home faster.
       </p>
+
+      {/* btn */}
+      <div className="mb-12 flex justify-between mx-auto w-[140px]">
+        <span className="w-[60px] h-[60px] rounded-full bg-[#F5F7F9] hover:bg-[#eceeef] flex items-center justify-center cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-md">
+          <ArrowLeft />
+        </span>
+        <span className="w-[60px] h-[60px] rounded-full bg-black hover:bg-[#000000e3] text-white flex items-center justify-center cursor-pointer transition-all duration-200 ease-in-out hover:scale-105 hover:shadow-lg">
+          <ArrowRight />
+        </span>
+      </div>
 
       <div className="grid grid-cols-[25%_50%_25%] gap-5 mt-12">
         {/* Card 1 */}
