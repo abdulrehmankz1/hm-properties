@@ -32,19 +32,8 @@ const slides = [
     desc: "Lorem ipsum dolor sit amet, consectetur",
   },
   {
-    image: "/assets/images/right-card.png",
-    title: "Modern 3‑Bedroom Villa in Downtown",
-    desc: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur
-        <br />3 Bed | 2 Baths | 1,800 Sq Ft
-      </>
-    ),
-    tags: ["Hot", "Price: $4,5000"],
-  },
-  {
-    image: "/assets/images/middle-card.png",
-    title: "Interior Space and Design",
+    image: "/assets/images/left-card.png",
+    title: "Commerical Space",
     desc: "Lorem ipsum dolor sit amet, consectetur",
   },
   {
@@ -64,19 +53,8 @@ const slides = [
     desc: "Lorem ipsum dolor sit amet, consectetur",
   },
   {
-    image: "/assets/images/right-card.png",
-    title: "Modern 3‑Bedroom Villa in Downtown",
-    desc: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur
-        <br />3 Bed | 2 Baths | 1,800 Sq Ft
-      </>
-    ),
-    tags: ["Hot", "Price: $4,5000"],
-  },
-  {
-    image: "/assets/images/middle-card.png",
-    title: "Interior Space and Design",
+    image: "/assets/images/left-card.png",
+    title: "Commerical Space",
     desc: "Lorem ipsum dolor sit amet, consectetur",
   },
   {
