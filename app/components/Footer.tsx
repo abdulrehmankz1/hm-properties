@@ -4,8 +4,9 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-white text-black">
-      <div className="container px-5 md:py-24 py-14 mx-auto flex flex-wrap md:flex-nowrap md:items-start flex-col md:flex-row gap-10">
+    <footer>
+     <div className="bg-white text-black">
+       <div className="container px-5 md:py-24 py-14 mx-auto flex flex-wrap md:flex-nowrap md:items-start flex-col md:flex-row gap-10">
         {/* Left Logo & Social Icons */}
         <div className="md:w-[30%] w-full text-center md:text-left">
           <Link
@@ -150,6 +151,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+     </div>
     </footer>
   );
 };
