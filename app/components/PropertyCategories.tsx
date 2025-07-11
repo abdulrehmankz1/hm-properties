@@ -4,10 +4,12 @@ import PropertyCard from "./PropertyCard";
 const PropertyCategories = () => {
   return (
     <section>
-      <div className="container mx-auto my-100">
+      <div className="container mx-auto my-100 px-4">
         <h4 className="mb-5">Property Categories</h4>
         <h2 className="text-center mb-12">Find by Property Type</h2>
-        <div className="grid grid-cols-4 gap-5">
+
+        {/* Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <PropertyCard
             title="Apartments"
             imageUrl="/assets/images/apartments.jpg"

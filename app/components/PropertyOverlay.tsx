@@ -12,9 +12,9 @@ const PropertyOverlay: React.FC<PropertyOverlayProps> = ({
   return (
     <div className="w-[95%] px-5 py-5 mb-5 rounded-[30px] bg-black/40 backdrop-blur text-left">
       <h5 className="text-white font-semibold mb-1">{title}</h5>
-      <p className="text-white/50 text-base leading-[18px]">
+      <div className="text-[#969696] text-base leading-[18px]">
         {description}
-      </p>
+      </div>
     </div>
   );
 };
