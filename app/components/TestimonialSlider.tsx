@@ -44,16 +44,12 @@ const TestimonialSlider = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024, // tablet
-        settings: {
-          slidesToShow: 2,
-        },
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 },
       },
       {
-        breakpoint: 768, // mobile
-        settings: {
-          slidesToShow: 1,
-        },
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
       },
     ],
   };
@@ -63,9 +59,9 @@ const TestimonialSlider = () => {
       <Slider {...settings}>
         {cards.map((card) => (
           <div key={card.id} className="px-4">
-            <div className="bg-[#F5F7F9] min-h-[290px] h-full w-full rounded-[30px] shadow-[0_0_5px_0_rgba(0,0,0,0.25)] p-7 flex flex-col justify-between">
-              <p className="text-[#7b7c7d] text-xl">{card.content}</p>
-              <div className="mt-6 flex items-center gap-4">
+            <div className="bg-[#F5F7F9] h-[290px] w-full rounded-[30px] shadow-[0_0_5px_0_rgba(0,0,0,0.25)] p-7 flex flex-col justify-between">
+              <p className="text-[#7b7c7d] text-base line-clamp-4">{card.content}</p>
+              <div className="mt-4 flex items-center gap-4">
                 <Image
                   src={card.imageUrl}
                   alt={card.name}
