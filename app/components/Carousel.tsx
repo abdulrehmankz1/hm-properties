@@ -2,7 +2,7 @@
 
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import type { default as SlickSliderType } from "react-slick"; // ✅ fix
+import type { default as SlickSliderType } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -43,30 +43,26 @@ const Carousel = () => {
   const sliderRef = useRef<SlickSliderType | null>(null);
 
   const settings = {
-    centerMode: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2500,
     speed: 800,
     arrows: false,
-    variableWidth: true,
+    variableWidth: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          centerMode: true,
-          variableWidth: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          centerMode: true,
-          variableWidth: false,
           slidesToShow: 1,
-          slidesToScroll: 1,
         },
       },
     ],
@@ -94,12 +90,7 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="px-4"
-            style={{
-              width: "29vw",
-              minWidth: "250px",
-              maxWidth: "500px",
-            }}
+            className="px-4 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[500px]"
           >
             <div
               className="relative h-[400px] rounded-[30px] bg-cover bg-center flex justify-center items-end"
