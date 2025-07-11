@@ -1,3 +1,4 @@
+import Carousel from "./components/Carousel";
 import ChooseUs from "./components/ChooseUs";
 import { Footer } from "./components/Footer";
 import HeroSection from "./components/HeroSection";

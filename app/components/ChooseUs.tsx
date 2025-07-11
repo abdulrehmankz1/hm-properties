@@ -35,7 +35,7 @@ const ChooseUs = () => {
           </div>
 
           {/* Right Column - Images */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-5">
+          <div className="w-full lg:w-1/2 flex flex-col">
             {/* First Image */}
             <div
               className="w-full h-[297px] rounded-[30px] bg-cover bg-no-repeat bg-center"

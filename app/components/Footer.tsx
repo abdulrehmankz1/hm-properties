@@ -15,7 +15,7 @@ export const Footer = () => {
             <span className="ml-3 text-2xl text-black logo">HM Properties</span>
           </Link>
 
-          <div className="flex flex-row items-center justify-center mt-[100px] md:mt-[200px] space-x-5">
+          <div className="flex flex-row items-center justify-center md:justify-start mt-[100px] md:mt-[200px] space-x-5">
             {[
               {
                 href: "https://facebook.com",
