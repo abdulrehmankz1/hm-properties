@@ -69,9 +69,9 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container mx-auto py-10 overflow-hidden">
+    <div className="py-10 overflow-hidden">
       {/* Custom Slider Buttons */}
-      <div className="mb-12 flex justify-between mx-auto w-[140px]">
+      <div className="mb-12 flex justify-between mx-auto">
         <button
           onClick={() => sliderRef.current?.slickPrev()}
           className="w-[60px] h-[60px] rounded-full bg-[#F5F7F9] hover:bg-[#eceeef] flex items-center justify-center cursor-pointer transition hover:scale-105 hover:shadow-md"
