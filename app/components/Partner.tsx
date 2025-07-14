@@ -5,7 +5,8 @@ const Partners = () => {
   return (
     <section>
       <div className="container mx-auto my-100">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        {/* grid-cols-1 up to 1023px, lg:grid-cols-2 from 1024px+ */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
           {/* Left Column */}
           <div className="h-full flex flex-col justify-between">
             <div>
@@ -30,7 +31,7 @@ const Partners = () => {
             <div className="flex flex-col lg:flex-col">
               {/* Heading and Paragraph Section */}
               <div className="order-1 lg:order-2">
-                <p className="text-[#00000080] md:mt-[75px] mt-[30px] mb-5">
+                <p className="text-[#00000080] mt-[30px] lg:mt-[75px] mb-5">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
