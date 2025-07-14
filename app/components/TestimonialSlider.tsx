@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="container mx-auto py-10 overflow-hidden">
+    <div className="py-10 overflow-hidden">
       <Slider {...settings}>
         {cards.map((card) => (
           <div key={card.id} className="px-4">

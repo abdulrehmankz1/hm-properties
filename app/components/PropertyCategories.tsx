@@ -14,18 +14,18 @@ const PropertyCategories = () => {
             title="Apartments"
             imageUrl="/assets/images/apartments.jpg"
           />
-
           <PropertyCard
             title="Commercial"
             imageUrl="/assets/images/commercial.jpg"
           />
-
           <PropertyCard
             title="Luxury Villas"
             imageUrl="/assets/images/villas.jpg"
           />
-
-          <PropertyCard title="Plots" imageUrl="/assets/images/plots.jpg" />
+          <PropertyCard
+            title="Plots"
+            imageUrl="/assets/images/plots.jpg"
+          />
         </div>
       </div>
     </section>
