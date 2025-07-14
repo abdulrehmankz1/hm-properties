@@ -28,7 +28,7 @@ export const Footer = () => {
               },
               {
                 href: "https://twitter.com",
-                src: "/assets/images/Twitter.svg",
+                src: "/assets/images/twitter.svg",
               },
             ].map(({ href, src }, index) => (
               <Link href={href} target="_blank" key={index}>
