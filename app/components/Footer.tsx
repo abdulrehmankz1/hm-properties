@@ -5,8 +5,8 @@ import React from "react";
 export const Footer = () => {
   return (
     <footer>
-      <div className="bg-white text-black">
-        <div className="container px-5 lg:py-24 py-14 mx-auto flex flex-wrap lg:flex-nowrap lg:items-start flex-col lg:flex-row gap-10">
+      <div className="container mx-auto">
+        <div className="bg-white text-black px-5 lg:pb-24 pb-14 flex flex-wrap lg:flex-nowrap lg:items-start flex-col lg:flex-row gap-10">
           {/* Left Logo & Social Icons */}
           <div className="lg:w-[30%] w-full text-center lg:text-left">
             <Link

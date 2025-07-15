@@ -9,7 +9,7 @@ type PropertyCardProps = {
 function PropertyCard({ title, imageUrl, className }: PropertyCardProps) {
   return (
     <div
-      className={`bg-[#F5F7F9] rounded-[30px] shadow-[0px_0px_5px_0px_rgba(0,0,0,0.25)] ${className}`}
+      className={`bg-[#F5F7F9] rounded-[30px] shadow-[0px_0px_5px_0px_rgba(0,0,0,0.25)]`}
     >
       {/* Image Wrapper */}
       <div className="w-full aspect-square overflow-hidden rounded-[30px]">
@@ -20,8 +20,11 @@ function PropertyCard({ title, imageUrl, className }: PropertyCardProps) {
         />
       </div>
 
-      {/* Title */}
-      <div className="text-black text-2xl p-7">{title}</div>
+      {/* card body */}
+      <div className="p-7">
+        {/* Title */}
+        <div className="text-black text-2xl">{title}</div>
+      </div>
     </div>
   );
 }

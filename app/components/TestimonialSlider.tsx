@@ -55,24 +55,31 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <div className="py-10 overflow-hidden">
+    <div className="py-2.5 overflow-hidden">
       <Slider {...settings}>
         {cards.map((card) => (
-          <div key={card.id} className="px-4">
+          <div key={card.id} className="px-2.5">
             <div className="bg-[#F5F7F9] h-[290px] w-full rounded-[30px] shadow-[0_0_5px_0_rgba(0,0,0,0.25)] p-7 flex flex-col justify-between">
-              <p className="text-[#7b7c7d] text-base line-clamp-4">{card.content}</p>
+              <p className="text-[#7b7c7d] text-base line-clamp-4">
+                {card.content}
+              </p>
               <div className="mt-4 flex items-center gap-4">
-                <Image
-                  src={card.imageUrl}
-                  alt={card.name}
-                  height={64}
-                  width={64}
-                  className="rounded-full"
-                  draggable={false}
-                />
+                {/* Image Wrapper */}
+                <div className="w-16 h-16 rounded-full overflow-hidden">
+                  <Image
+                    src={card.imageUrl}
+                    alt={card.name}
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                    draggable={false}
+                  />
+                </div>
+
+                {/* Name and Role */}
                 <div>
-                  <div className="text-black font-semibold">{card.name}</div>
-                  <div className="text-[#7b7c7d] text-sm">{card.role}</div>
+                  <div className="text-black font-medium">{card.name}</div>
+                  <div className="text-[#7b7c7d] font-medium">{card.role}</div>
                 </div>
               </div>
             </div>
