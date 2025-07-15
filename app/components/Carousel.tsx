@@ -90,7 +90,7 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="px-4 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[500px]"
+            className="px-2.5 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[500px]"
           >
             <div
               className="relative h-[400px] rounded-[30px] bg-cover bg-center flex justify-center items-end"
@@ -99,12 +99,12 @@ const Carousel = () => {
               {slide.tags && (
                 <div className="absolute top-4 left-4 flex gap-2 z-10">
                   {slide.tags.map((label: string, idx: number) => (
-                    <div
+                    <p
                       key={idx}
-                      className="px-5 py-2.5 h-[48px] rounded-[30px] bg-black/40 backdrop-blur text-white font-semibold flex items-center"
+                      className="px-5 py-2.5 rounded-[30px] bg-black/40 backdrop-blur text-white font-semibold flex items-center"
                     >
                       {label}
-                    </div>
+                    </p>
                   ))}
                 </div>
               )}

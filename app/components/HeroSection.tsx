@@ -5,9 +5,9 @@ import { Button } from "./Button";
 
 const HeroSection = () => {
   return (
-    <section>
-      <div className="hero_section pt-[30px] pb-12 relative">
-        <div className="lg:w-1/2 md:w-9/12 w-4/5 mx-auto">
+    <section className="hero_section pt-[30px] pb-12">
+      <div className="container mx-auto ">
+        <div className="xl:w-4/5 lg:w-4/5 md:w-10/12 w-4/5 mx-auto relative">
           <h1 className="md:mt-[190px] mt-[140px]">
             Find Your Dream Home Today
           </h1>
@@ -30,7 +30,7 @@ const HeroSection = () => {
               />
 
               {/* Buttons */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 xl:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-4 xl:gap-6">
                 <Button
                   variant="secondary-outline"
                   className="w-full text-base"
