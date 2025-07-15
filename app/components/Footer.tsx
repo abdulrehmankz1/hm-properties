@@ -49,7 +49,7 @@ export const Footer = () => {
           </div>
 
           {/* Navigation Columns */}
-          <div className="lg:w-[70%] w-full flex justify-between flex-wrap gap-8 text-center lg:text-left">
+          <div className="lg:w-[70%] w-full flex justify-evenly flex-wrap gap-8 text-center lg:text-left">
             {/* Sitemap */}
             <div className="xl:w-1/4 lg:w-1/2 w-full px-2">
               <h6 className="text-black font-semibold tracking-widest mb-4">
