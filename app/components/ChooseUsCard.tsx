@@ -29,7 +29,7 @@ function ChooseUsCard({ number, title, description }: ChooseUsCardProps) {
 
       {/* Title and Description Wrapper */}
       <div className="flex-1 flex flex-col justify-end mt-[20px] md:mt-[25px]">
-        <div className="text-black text-2xl">{title}</div>
+        <div className="text-black text-xl">{title}</div>
         <div className="text-[#00000080] mt-1 whitespace-pre-line text-base">
           {description}
         </div>
