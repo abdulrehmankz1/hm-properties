@@ -21,7 +21,7 @@ type ChooseUsCardProps = {
 // }
 function ChooseUsCard({ number, title, description }: ChooseUsCardProps) {
   return (
-    <div className="p-7 bg-[#F5F7F9] rounded-3xl w-full h-[200px] md:h-[245px] flex flex-col">
+    <div className="py-7 xl:px-7 lg:px-[26px] md:px-7 px-7 bg-[#F5F7F9] rounded-3xl w-full h-[200px] md:h-[245px] flex flex-col">
       {/* Number Badge */}
       <div className="py-1.5 px-4 bg-white w-fit rounded-full text-2xl">
         {number}

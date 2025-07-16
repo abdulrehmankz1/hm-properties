@@ -4,14 +4,16 @@ import ChooseUsCard from "./ChooseUsCard";
 const ChooseUs = () => {
   return (
     <section>
-      <div className="container mx-auto my-100 px-4">
+      <div className="container mx-auto my-100 md:px-4 px-3">
         <h4 className="mb-5">Why Choose Us</h4>
-        <h2 className="text-center mb-12">Your Trusted Real Estate Partner</h2>
+        <h2 className="text-center md:mb-12 mb-9">
+          Your Trusted Real Estate Partner
+        </h2>
 
         {/* Responsive Layout */}
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12">
+        <div className="flex flex-col lg:flex-row gap-6 xl:gap-12 lg:gap-5">
           {/* Left Column - Cards */}
-          <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 xl:gap-5 lg:gap-3 gap-5">
             <ChooseUsCard
               number={1}
               title="Verified Listings Only"

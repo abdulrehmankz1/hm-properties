@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="hero_section pt-[30px] pb-12">
       <div className="container mx-auto ">
-        <div className="xl:w-4/5 lg:w-4/5 md:w-10/12 w-4/5 mx-auto relative">
+        <div className="xl:w-4/5 lg:w-4/5 md:w-10/12 w-full mx-auto relative">
           <h1 className="md:mt-[190px] mt-[140px]">
             Find Your Dream Home Today
           </h1>
@@ -15,7 +15,7 @@ const HeroSection = () => {
             Explore the best properties in your city — for living, investing, or
             vacation.
           </div>
-          <div className="flex justify-center my-12">
+          <div className="flex justify-center md:my-12 my-7">
             <button className="hero_btn px-7 py-3.5 text-white cursor-pointer">
               Book a Free Consultation
             </button>

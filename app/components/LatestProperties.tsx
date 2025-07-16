@@ -6,7 +6,7 @@ import Carousel from "./Carousel";
 const LatestProperties = () => {
   return (
     <section>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto md:px-4 px-3">
         <div className="w-full md:w-[90%] mx-auto">
           <h2 className="text-center">Latest Properties on the Market</h2>
           <p className="text-[#00000080] text-center my-5">

@@ -5,14 +5,14 @@ const Newsletter = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="my-100 bg-[#F5F7F9] rounded-[30px] p-6 pb-12">
+        <div className="my-100 bg-[#F5F7F9] rounded-[30px] md:p-6 p-3 md:pb-12 pb-7 pt-7">
           <h4 className="mb-5">Newsletter</h4>
           <h2 className="text-center">Stay Ahead of the Market</h2>
           <p className="text-[#00000080] mt-5 text-center">
             Subscribe to get the latest updates on new listings and market
             trends.
           </p>
-          <div className="flex items-center justify-center mt-12">
+          <div className="flex items-center justify-center md:mt-12 mt-7">
             <div className="relative w-[500px]">
               <input
                 type="text"
